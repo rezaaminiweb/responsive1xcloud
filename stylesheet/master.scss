@@ -1,0 +1,498 @@
+body{
+    font-family:fontbist ;
+}
+@font-face {
+    font-family: fontbist;
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+.pos1{
+    left: 15%;
+    top: 20%;
+    z-index: 2;
+}
+.pos2{
+    left: 0;
+    top: 5%;
+}
+.pos3{
+    left: 60%;
+    top: 55%;
+}
+.pos5{
+    left: 70%;
+    top: 5%;
+}
+.pos6{
+    left: 80%;
+    top: 35%;
+}
+.pos7{
+    left: 85%;
+    top: 70%;
+}
+.poss{
+    border: 1px solid rgba(255, 255, 255, 0.33);
+}
+.pos8{
+    left: 0;
+    top: 70%;
+    z-index: 3  ;
+}
+.pos9{
+    left: 20%;
+}
+.pos10{
+    left: 10%;
+    top: 25%;
+}
+.pos12{
+    top: 10%;
+    left: 25%;
+}
+.pos13{
+    top: -10%;
+}
+.pos14{
+    top: 40%;
+    left: 50%;
+}
+.pos20{
+    left: 10%;
+    top: 40%;
+}
+.pos21{
+    left: 6%;
+    top: 45%;
+}
+.pos22{
+    left: 50%;
+    top: 40%;
+}
+.imgtrans{
+    cursor: pointer;
+    &:hover{
+        animation: anime2 2s linear infinite;
+    }
+}
+.imagination{
+    width: 500%;
+    // position: absolute;
+    animation: anime3 35s linear infinite ;
+    .imageinfo{
+        border: 1px solid rgba(255, 255, 255, 0.559);
+    }
+}
+.imagination1{
+    animation: anime4 35s linear  infinite ;
+    transform: translateX(-90%);
+}
+@keyframes anime4 {
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes anime3{
+    to{
+        transform: translateX(-90%);
+    }
+}
+@keyframes anime2{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.backimage{
+    height: 90vh;
+    background-image: url(../img/banner-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: anime1 20s linear  infinite ;
+    .ahhref{
+        background-color: #805ef0;
+        color: white;
+        transition: .4s;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+        
+    }
+    >figure{
+        scale: 1;
+    }
+}
+@keyframes anime1{
+    0%{
+        scale: 1;
+    }
+    25%{
+        scale: 1.05;
+    }
+    50%{
+        scale: 1.1;
+    }
+    75%{
+        scale: 1.05;
+    }
+    100%{
+        scale: 1;
+    }
+}
+.megamenu1{
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    >li{
+        color: white;
+        list-style-type: none;
+        padding: 5px 20px;
+        font-weight: bold;
+        position: relative;
+        &:nth-of-type(1)::after{
+            content: '\02C5';
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        &:nth-of-type(4)::after{
+            content: '\02C5';
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        &:nth-of-type(4){
+            &:hover>ul{
+                visibility: visible;
+                opacity: 1;
+                transition: .4s;
+            }
+            >ul{
+                visibility: hidden;
+                opacity: 0;
+                position: absolute;
+                width: 200%;
+                top: 100%;
+                left: 0;
+                background-color: black;
+                >li{
+                    // border: 1px solid red;
+                    list-style-type: none;
+                    padding: 10px 0px 10px 15px;
+                    transition: .4s;
+                    &:nth-of-type(6){
+                        position: relative;
+                        &:hover>ul{
+                            visibility: visible;
+                            opacity: 1;
+                            transition: .4s;
+                        }
+                        >ul{
+                            visibility: hidden;
+                            opacity: 0;
+                            position: absolute;
+                            background-color: black;
+                            top: 0;
+                            left: -100%;
+                            width: 100%;
+                            >li{
+                                padding: 15px 0px 15px 15px;
+                                position: relative;
+                                &:nth-of-type(1){
+                                    &:hover>ul{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        transition: .4s;
+                                    }
+                                    >ul{
+                                        opacity: 0;
+                                        visibility: visible;
+                                        left: -100%;
+                                        top: 0;
+                                        position: absolute;
+                                        
+                                        width: 100%;
+                                        
+                                        background-color: black;
+    
+                                        >li{
+                                            list-style-type: none;
+                                            padding: 15px 0px 15px 15px;
+                                            &:hover{
+                                                background-color: #805ef0;
+                                            }
+                                            >a{
+                                                text-decoration: none;
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                                &:nth-of-type(2){
+                                    &:hover>ul{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        transition: .4s;
+                                    }
+                                    >ul{
+                                        visibility: hidden;
+                                        opacity: 0;
+                                        position: absolute;
+                                    left: -100%;
+                                    top: 0;
+                                    width: 100%;
+                                    background-color: black;
+                                    >li{
+                                        &:hover{
+                                            background-color: #805ef0;
+                                            transition: .4s;
+                                        }
+                                    }
+                                    }
+                                    
+                                }
+                                >ul{
+                                    >li{
+                                        list-style-type: none;
+                                        padding: 15px 0px 15px 15px;
+                                        >a{
+                                            text-decoration: none;
+                                            color: white;
+                                        }
+                                    }
+                                }
+                                &:hover{
+                                    background-color: #805ef0;
+                                    transition: .4s;
+                                }
+                                >a{
+                                    color: white;
+                                    text-decoration: none;
+                                    text-transform: uppercase;
+                                    &::after{
+                                        content: '>';
+                                        text-transform: uppercase;
+                                        margin-left: 15px;
+                                    }
+                                }
+
+                            }
+
+                        }
+                        
+                        >a{
+                            
+
+                            &::after{
+                                content: '>';
+                                font-size: 15px;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-color: #805ef0;
+                    }
+
+                    >a{
+                        text-decoration: none;
+                        color: white;
+                        text-transform: uppercase;
+                    }
+                }
+            
+            }
+        }
+        &:nth-of-type(1){
+            >ul{
+                visibility: hidden;
+                opacity: 0;
+                width: 150%;
+                position: absolute;
+                top: 100%;
+                left: 0;    
+                transition: .4s;
+                background-color: black;
+                >li{
+                    list-style-type: none;
+                    // border: 1px solid red;
+                    padding: 10px 0px 10px 16px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    &:hover{
+                        background-color: #805ef0;
+                        transition: .4s;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(1):hover>ul{
+            visibility: visible;
+            opacity: 1;
+        }
+        &:hover>a{
+            color: #805ef0;
+            transition: .4s;
+        }
+        >a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+}
+#checkit + label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 70px;
+    height: 60px;
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0);
+
+    
+}
+.classes{
+    background-color: #805ef0;
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 0px 15px;
+}
+.ahrefs{
+    background-color: #805ef0;
+    color: white;
+    font-weight: bolder ;
+    transition: .4s;
+    &:hover{
+        background-color: white;
+        color: #805ef0;
+    }
+}
+
+#checkit{
+    display: none;
+}
+#checkit:checked ~ .megamenu{
+    display: block;
+    height: 200px;
+    transition: .4s;
+    opacity: 1;
+    
+
+}
+.back3{
+    background-image: url(../img/1-10.jpg);
+    background-size: cover;
+    height: 50vh;
+    background-position: 0% 50%;
+}
+// .classes{
+//     // cursor: pointer;
+// }
+
+// #checkit:checked ~ .megamenu>li{
+//     color: aqua;
+// }
+.megamenu{
+    opacity: 0;
+    z-index: 99;
+    position: absolute;
+    width: 450px;
+    left: -100%;
+    top: 100%;
+    transition: .4s;
+    height: 0px ;
+    background-color: black;
+    display: block;
+    justify-content: start;
+    padding: 0;
+    >li{
+        width: 100%;
+        justify-content: start;
+        list-style-type: none;
+        align-items: center;
+        align-items: center;
+        display: flex;
+        // padding-bottom: 10px;
+        // padding-left: 10px;
+    //    padding: 10px 20px;
+       
+        &:nth-of-type(1){
+            >ul{
+                >li{
+                    // background-color: #805ef0;
+                    &:hover{
+                        background-color: #805ef0;
+                        transition: .4s;
+                    }
+                }
+            }
+        }
+        &:nth-of-type(4){
+            >ul{
+                >li{
+                    // background-color: #805ef0;
+                    &:hover{
+                        background-color: #805ef0;
+                        transition: .4s;
+                    }
+                }
+            }
+        }
+        
+        &:nth-of-type(1)::after ,&:nth-of-type(4)::after {
+            content: '>';
+            // background-color: white;
+            color: white;
+            
+        }
+
+        &:hover{
+            background-color:#805ef0 ;
+            transition: .4s;
+        }
+        
+        
+        // border: 1px solid rgb(255, 0, 0);
+        
+        >a{
+            width: 15%;
+            justify-content: start;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            // border: 2px solid red;
+        }
+    }
+}
+.translateX{
+    transform: translateX(-30%);
+}
+.translateY{
+    transform: translateY(-100%);
+}
+.translateXY{
+    transform: translate(70%,25%);
+}
+.translateX1{
+    transform: translate(-110%,30%);
+}
+.pos25{
+    transform: translateX(150%) translateY(-40%);
+    
+    
+}
+.pos26{
+    transform: translateX(50%) translateY(-60%);
+}
